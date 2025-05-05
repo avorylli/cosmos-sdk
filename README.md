@@ -40,6 +40,38 @@ If you want to get started quickly and learn how to build on top of Cosmos SDK, 
 
 For more information, see the [Cosmos SDK Documentation](https://docs.cosmos.network).
 
+## Development Environment Setup
+
+If you're looking to contribute to the Cosmos SDK or develop your own application using the SDK, follow these steps to set up your development environment:
+
+1. **Install Go**:
+   - The Cosmos SDK requires the latest maintained Go version (minimum Go 1.20+)
+   - Install Go by following the [official installation instructions](https://golang.org/doc/install)
+   - Ensure your `GOPATH` and `GOBIN` environment variables are properly set up
+
+2. **Clone the repository**:
+   ```bash
+   git clone https://github.com/cosmos/cosmos-sdk.git
+   cd cosmos-sdk
+   ```
+
+3. **Install the required tools**:
+   ```bash
+   make tools
+   ```
+
+4. **Build and install**:
+   ```bash
+   make install
+   ```
+
+5. **Run tests**:
+   ```bash
+   make test
+   ```
+
+For more detailed instructions and troubleshooting, see the [Developer Guide](https://github.com/cosmos/cosmos-sdk/blob/main/CONTRIBUTING.md#development-environment-setup) in the contributing documentation.
+
 ## Modules
 
 The Cosmos SDK maintains a set of modules that can be included in your blockchain application.  For more information
